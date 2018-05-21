@@ -1,0 +1,106 @@
+10845 큐
+
+https://www.acmicpc.net/problem/10845
+
+
+
+
+
+    import java.util.LinkedList;
+    import java.util.Queue;
+    import java.util.Scanner;
+    
+    public class Main {
+        public static Queue<Integer> que = new LinkedList<Integer >();
+    
+        public static void main(String[] args) {
+    
+            Scanner sc = new Scanner(System.in);
+            int number = sc.nextInt();
+    
+            int last = 0;
+            for (int i = 0; i < number; i++){
+                String order = sc.next();
+                switch (order) {
+                    case "push":
+                        int inputNum = sc.nextInt();
+                        que.offer(inputNum);
+                        last = inputNum;
+                        break;
+    
+                    case "pop":
+                        if (que.isEmpty()){
+                            System.out.println("-1");
+                        } else {
+                            System.out.println(que.poll());
+                        }
+                        break;
+    
+                    case "size":
+                        System.out.println(que.size());
+                        break;
+    
+                    case "empty":
+                        if (que.isEmpty()){
+                            System.out.println("1");
+                        } else {
+                            System.out.println("0");
+                        }
+                        break;
+    
+                    case "front":
+                        if (que.isEmpty()){
+                            System.out.println("-1");
+                        } else {
+                            System.out.println(que.peek());
+                        }
+                        break;
+    
+                    case "back":
+                        if (que.isEmpty()){
+                            System.out.println("-1");
+                        } else {
+    
+                            System.out.println(last);
+                        }
+                        break;
+                }
+            }
+        }
+    
+    }
+    
+
+
+
+출력
+
+    1
+    2
+    2
+    0
+    1
+    2
+    -1
+    0
+    1
+    -1
+    0
+    
+    3
+
+마지막 3이 안나와서 뭐지 하다가 엔터를 쳤더니 값이 나왔다.
+
+왜인지는 모르겠음@.@
+
+어쨌든 백준에서는 맞다고 한다.
+
+3이 안나와서 뭔가 했다ㅠ
+
+
+
+그리고 문제를 잘 읽자..
+
+push 할 때도 값을 출력하는 줄 알았는데 아니었음.
+
+
