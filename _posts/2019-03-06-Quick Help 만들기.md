@@ -2,7 +2,7 @@
 layout: post
 title: Markup으로 Quick Help 만들기
 summary: Markup으로 Quick Help를 만들어보자.
-featured-img: quickhelp_ex2
+featured-img: sleek
 ---
 # Markup으로 Quick Help 만들기
 
