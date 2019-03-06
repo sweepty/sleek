@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Quick Help 만들기
+title: Markup으로 Quick Help 만들기
 summary: Markup으로 Quick Help를 만들어보자.
-featured-img: quickhelp_ex
+featured-img: quickhelp_ex2
 ---
-# Markup으로 Quick Help 작성하기
+# Markup으로 Quick Help 만들기
 
 CocoaPods을 만지고 있는 중인데 갑자기 `option + click` 을 하면 나오는 이것은 어떻게 하는 것인지 궁금해졌다.
 
